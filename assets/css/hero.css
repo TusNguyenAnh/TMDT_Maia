@@ -14,22 +14,32 @@
     padding-top: 40px;
     display: flex;
     flex-direction: column;
-    gap: 2.2rem;
 }
 
 .hero__sidebar-item {
-    display: flex;
+    display: inline-block;
     justify-content: space-between;
     align-items: center;
-    text-decoration: none;
     color: var(--text-color, #000000);
     font-family: 'Poppins';
     font-size: 1.6rem;
     font-weight: 400;
+    text-decoration: none;
     transition: color 0.2s ease;
+    min-height: 4rem;
+
 }
 
-.hero__sidebar-item:hover {
+
+.hero__sidebar-item-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.hero__sidebar-item-link:hover {
     color: var(--primary-color, #DB4444);
 }
 
@@ -100,7 +110,7 @@
     color: var(--text-color-grey, #7D8184);
 }
 
-.hero__banner-link span{
+.hero__banner-link span {
     border-bottom: 1px solid var(--text-color-white, #FFFFFF);
     padding-bottom: 0.4rem;
 }
@@ -147,9 +157,11 @@
 .hero__banner-dot--active {
     background-color: var(--primary-color, #DB4444);
     border: 2px solid var(--text-color-white, #FFFFFF);
-    width: 14px; /* Slightly larger to account for border */
+    width: 14px;
+    /* Slightly larger to account for border */
     height: 14px;
-    margin-top: -1px; /* Align centers due to size difference */
+    margin-top: -1px;
+    /* Align centers due to size difference */
 }
 
 /* Responsive */
@@ -188,4 +200,56 @@
     .hero__banner-title {
         font-size: 3.2rem;
     }
+}
+
+/* Sidebar wrapper + sub-menu */
+.hero__sidebar-wrapper {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.hero__sidebar-item--has-sub .hero__sidebar-icon {
+    transition: transform 0.3s ease;
+}
+
+.hero__sidebar-item--has-sub.open .hero__sidebar-icon {
+    transform: rotate(90deg);
+}
+
+.hero__sidebar-sub {
+    display: none;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.2rem 0 1.8rem 2rem;
+    overflow: hidden;
+    animation: slideDown 0.25s ease forwards;
+}
+
+.hero__sidebar-sub.show {
+    display: flex;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero__sidebar-sub-item {
+    font-size: 1.6rem;
+    color: var(--text-color, #000000);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero__sidebar-sub-item:hover {
+    color: var(--primary-color, #DB4444);
 }

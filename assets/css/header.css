@@ -90,3 +90,85 @@
     align-items: center;
     gap: 16px;
 }
+
+/* Account dropdown */
+.header__account {
+    position: relative;
+}
+
+.header__account-btn {
+    background: #DB4444;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.2s ease;
+}
+
+.header__account-btn:hover {
+    background: #b83232;
+}
+
+.header__account-btn img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.header__account-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    width: 220px;
+    background: #0000000A;
+    backdrop-filter: blur(80px);
+    border-radius: 4px;
+    padding: 8px 0;
+    z-index: 999;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    animation: dropIn 0.2s ease forwards;
+}
+
+.header__account-dropdown.show {
+    display: block;
+}
+
+@keyframes dropIn {
+    from { opacity: 0; transform: translateY(-8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.header__account-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+    color: #fff;
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    transition: background 0.15s ease;
+}
+
+.header__account-link img {
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) invert(1);
+    flex-shrink: 0;
+}
+
+.header__account-link:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.header__account-link--logout {
+    margin-top: 4px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 12px;
+}

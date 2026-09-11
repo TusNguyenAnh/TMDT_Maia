@@ -14,20 +14,20 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="../assets/css/main.css">
-  <link rel="stylesheet" href="../assets/css/base.css">
-  <link rel="stylesheet" href="../assets/css/grid.css">
-  <link rel="stylesheet" href="../assets/css/top-bar.css">
-  <link rel="stylesheet" href="../assets/css/header.css">
-  <link rel="stylesheet" href="../assets/css/hero.css">
-  <link rel="stylesheet" href="../assets/css/flash_sales.css">
-  <link rel="stylesheet" href="../assets/css/categories.css">
-  <link rel="stylesheet" href="../assets/css/best_sell.css">
-  <link rel="stylesheet" href="../assets/css/music_banner.css">
-  <link rel="stylesheet" href="../assets/css/explore_product.css">
-  <link rel="stylesheet" href="../assets/css/new_arrival.css">
-  <link rel="stylesheet" href="../assets/css/services.css">
-  <link rel="stylesheet" href="../assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/grid.css">
+  <link rel="stylesheet" href="assets/css/top-bar.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/hero.css">
+  <link rel="stylesheet" href="assets/css/flash_sales.css">
+  <link rel="stylesheet" href="assets/css/categories.css">
+  <link rel="stylesheet" href="assets/css/best_sell.css">
+  <link rel="stylesheet" href="assets/css/music_banner.css">
+  <link rel="stylesheet" href="assets/css/explore_product.css">
+  <link rel="stylesheet" href="assets/css/new_arrival.css">
+  <link rel="stylesheet" href="assets/css/services.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
 
 
   <title>E-Commerce</title>
@@ -76,12 +76,40 @@
         </div>
 
         <div class="header__icons">
-          <a href="#">
+          <a href="#" aria-label="Wishlist">
             <img src="/assets/images/heart.svg" />
           </a>
-          <a href="#">
+          <a href="#" aria-label="Cart">
             <img src="/assets/images/cart.svg" />
           </a>
+          <!-- Account Icon + Dropdown -->
+          <div class="header__account" id="accountMenu">
+            <button class="header__account-btn" id="accountBtn" aria-label="Account" aria-expanded="false">
+              <img src="/assets/images/user_icon.svg" alt="Account" />
+            </button>
+            <div class="header__account-dropdown" id="accountDropdown" role="menu">
+              <a href="#" class="header__account-link" role="menuitem">
+                <img src="/assets/images/user_icon.svg" alt="" />
+                Manage My Account
+              </a>
+              <a href="#" class="header__account-link" role="menuitem">
+                <img src="/assets/images/order_icon.svg" alt="" />
+                My Order
+              </a>
+              <a href="#" class="header__account-link" role="menuitem">
+                <img src="/assets/images/cancel_icon.svg" alt="" />
+                My Cancellations
+              </a>
+              <a href="#" class="header__account-link" role="menuitem">
+                <img src="/assets/images/review_icon.svg" alt="" />
+                My Reviews
+              </a>
+              <a href="#" class="header__account-link header__account-link--logout" role="menuitem">
+                <img src="/assets/images/logout_icon.svg" alt="" />
+                Logout
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -93,23 +121,58 @@
       <div class="grid wide hero__container">
         <!-- Sidebar Menu -->
         <div class="hero__sidebar">
-          <a href="#" class="hero__sidebar-item">
-            Woman's Fashion
-            <img src="/assets/images/arrow_right.svg" class="hero__sidebar-icon" alt="arrow right" />
-          </a>
-          <a href="#" class="hero__sidebar-item">
-            Men's Fashion
-            <img src="/assets/images/arrow_right.svg" class="hero__sidebar-icon" alt="arrow right" />
-          </a>
-          <a href="#" class="hero__sidebar-item">Electronics</a>
-          <a href="#" class="hero__sidebar-item">Home & Lifestyle</a>
-          <a href="#" class="hero__sidebar-item">Medicine</a>
-          <a href="#" class="hero__sidebar-item">Sports & Outdoor</a>
-          <a href="#" class="hero__sidebar-item">Baby's & Toys</a>
-          <a href="#" class="hero__sidebar-item">Groceries & Pets</a>
-          <a href="#" class="hero__sidebar-item">Health & Beauty</a>
-        </div>
+          <!-- Women's Fashion with sub-menu -->
+          <ul class="hero__sidebar-wrapper">
+            <li class="hero__sidebar-item">
+              <a href="#" class="hero__sidebar-item-link hero__sidebar-item--has-sub">
+                Woman's Fashion
+                <img src="/assets/images/arrow_right.svg" class="hero__sidebar-icon" alt="arrow right" />
+              </a>
+              <div class="hero__sidebar-sub">
+                <a href="#" class="hero__sidebar-sub-item">Dresses</a>
+                <a href="#" class="hero__sidebar-sub-item">Tops &amp; Blouses</a>
+                <a href="#" class="hero__sidebar-sub-item">Shoes</a>
+                <a href="#" class="hero__sidebar-sub-item">Accessories</a>
+                <a href="#" class="hero__sidebar-sub-item">Bags &amp; Purses</a>
+              </div>
+            </li>
 
+            <li class="hero__sidebar-item">
+              <a href="#" class="hero__sidebar-item-link">
+                Men's Fashion
+                <img src="/assets/images/arrow_right.svg" class="hero__sidebar-icon" alt="arrow right" />
+              </a>
+            </li>
+
+            <li class="hero__sidebar-item">
+              <a href="#" class="hero__sidebar-item-link">Electronics</a>
+            </li>
+
+            <li class="hero__sidebar-item">
+              <a href="#" class="hero__sidebar-item-link">Home & Lifestyle</a>
+            </li>
+
+            <li class="hero__sidebar-item">
+              <a href="#" class="hero__sidebar-item-link">Medicine</a>
+            </li>
+
+            <li class="hero__sidebar-item">
+              <a href="#" class="hero__sidebar-item-link">Sports & Outdoor</a>
+            </li>
+
+            <li class="hero__sidebar-item">
+              <a href="#" class="hero__sidebar-item-link">Baby's & Toys</a>
+            </li>
+
+            <li class="hero__sidebar-item">
+              <a href="#" class="hero__sidebar-item-link">Groceries & Pets</a>
+            </li>
+
+            <li class="hero__sidebar-item">
+              <a href="#" class="hero__sidebar-item-link">Health & Beauty</a>
+            </li>
+          </ul>
+        </div>
         <!-- Main Banner -->
         <div class="hero__banner">
           <div class="hero__banner-wrapper">

@@ -133,7 +133,6 @@ html {
     align-items: center;
     justify-content: center;
     line-height: 1.6rem;
-    background-color: var(--white-color);
 }
 
 .btn.btn--normal:hover {
@@ -141,7 +140,6 @@ html {
 }
 
 .btn.btn--primary {
-    color: var(--white-color);
     background-color: var(--primary-color);
 }
 
@@ -164,7 +162,6 @@ html {
     padding: 0 12px;
     height: 34px;
     border-radius: 2px;
-    background-color: var(--white-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -192,7 +189,6 @@ html {
     right: 0;
     top: 25px;
     border-radius: 2px;
-    background-color: var(--white-color);
     padding: 10px 16px;
     list-style: none;
     display: none;
@@ -227,7 +223,6 @@ html {
 }
 
 .pagination-item--active .pagination-item__link {
-    color: var(--white-color);
     background-color: var(--primary-color);
 }
 
