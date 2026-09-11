@@ -1,0 +1,11 @@
+.app {
+    overflow: hidden;
+}
+
+.font_poppins {
+    font-family: 'Poppins';
+}
+
+.display-none {
+    display: none !important;
+}

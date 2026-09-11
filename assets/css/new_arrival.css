@@ -1,0 +1,157 @@
+/* ===========================
+   New Arrival Section
+   =========================== */
+
+.new-arrival {
+    margin-bottom: var(--section-gap, 80px);
+}
+
+/* Grid Layout */
+.new-arrival-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    height: 600px;
+}
+
+.new-arrival__col {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    height: 100%;
+}
+
+.new-arrival__row-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    flex-grow: 1;
+}
+
+/* Items */
+.new-arrival__item {
+    background-color: #000000;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-arrival__item--women {
+    height: 28.5rem;
+    /* Approx half height minus half gap */
+    justify-content: flex-end;
+}
+
+/* Images */
+.new-arrival__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* Ensure product images show fully instead of crop if they have transparency */
+.new-arrival__item--ps5 img,
+.new-arrival__item--speaker img,
+.new-arrival__item--perfume img {
+    object-fit: contain;
+    padding: 3rem;
+}
+
+.new-arrival__item--ps5 img {
+    object-position: bottom;
+    padding-bottom: 0;
+}
+
+.new-arrival__item:hover img {
+    transform: scale(1.05);
+}
+
+/* Content Overlay */
+.new-arrival__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 3.2rem;
+    z-index: 2;
+    color: #FAFAFA;
+}
+
+.new-arrival__title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+    line-height: 1.2;
+}
+
+.new-arrival__desc {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 0 0 1.4rem 0;
+    line-height: 1.5;
+    max-width: 25rem;
+    color: #FAFAFA;
+    opacity: 0.8;
+}
+
+.new-arrival__link {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    transition: color 0.2s ease;
+}
+
+.new-arrival__link:hover {
+    color: var(--text-color-grey, #7D8184);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .new-arrival-grid {
+        height: auto;
+    }
+
+    .new-arrival__item--ps5 {
+        min-height: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .new-arrival-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .new-arrival__item--ps5 {
+        min-height: 400px;
+    }
+
+    .new-arrival__item--women {
+        height: 300px;
+    }
+
+    .new-arrival__row-split {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .new-arrival__row-split {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .new-arrival__item--speaker,
+    .new-arrival__item--perfume {
+        height: 300px;
+    }
+
+    .new-arrival__content {
+        padding: 2.4rem;
+    }
+}

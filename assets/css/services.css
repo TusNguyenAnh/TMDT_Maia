@@ -1,0 +1,68 @@
+/* ===========================
+   Services Section
+   =========================== */
+.services {
+    margin-bottom: var(--section-gap, 80px);
+    padding: 8rem 0;
+}
+
+.services-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 8.8rem;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2.4rem;
+}
+
+.service-item__icon-wrapper {
+    width: 8rem;
+    height: 8rem;
+    background-color: #C1C0C1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-item__icon-inner {
+    width: 5.8rem;
+    height: 5.8rem;
+    background-color: #000000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-item__icon-inner img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+}
+
+.service-item__content h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0 0 0.8rem 0;
+}
+
+.service-item__content p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .services-wrapper {
+        flex-direction: column;
+        gap: 4.8rem;
+    }
+}

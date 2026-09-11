@@ -1,0 +1,40 @@
+.top-bar {
+    background-color: var(--black-color, #000000);
+    color: var(--text-color-white, #FAFAFA);
+    height: 48px;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.top-bar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.top-bar__text {
+    flex: 1;
+    text-align: center;
+    font-weight: 300;
+}
+
+.top-bar__link {
+    color: var(--text-color-white, #FAFAFA);
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+.top-bar__link:hover {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.top-bar__lang {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-weight: 400;
+}

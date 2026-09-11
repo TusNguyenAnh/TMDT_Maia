@@ -1,0 +1,28 @@
+/* ===========================
+   Best Selling Section
+   =========================== */
+
+.best-selling {
+    margin-bottom: var(--section-gap, 80px);
+}
+
+/* "View All" button aligned to the right */
+.best-sell__view-all {
+    display: flex;
+    align-items: center;
+}
+
+.best-sell__view-all .btn {
+    color: #FAFAFA;
+    padding: 1.2rem 3.2rem;
+    height: auto;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    transition: background-color 0.2s ease;
+}
+
+.best-sell__view-all .btn:hover {
+    background-color: var(--hover-btn-color, #E07575);
+}
+

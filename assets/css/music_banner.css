@@ -1,0 +1,189 @@
+.music-banner {
+    border-radius: 4px;
+    margin-bottom: var(--section-gap, 80px);
+    overflow: hidden;
+    position: relative;
+}
+
+.music-banner__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5.2rem 5.4rem;
+    min-height: 26rem;
+    position: relative;
+    background-color: #000000;
+}
+
+/* Left content */
+.music-banner__content {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    max-width: 40%;
+    z-index: 1;
+}
+
+.music-banner__category {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--button-green, #00FF66);
+    font-family: 'Poppins', sans-serif;
+}
+
+.music-banner__title {
+    font-size: 4.8rem;
+    font-weight: 600;
+    color: var(--text-color-white, #FFFFFF);
+    line-height: 1.25;
+    margin: 0;
+}
+
+/* Circular countdown badges */
+.music-banner__countdown {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+}
+
+.music-banner__badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 6.2rem;
+    height: 6.2rem;
+    border-radius: 50%;
+    background-color: var(--text-color-white, #FFFFFF);
+    gap: 0.2rem;
+}
+
+.music-banner__badge-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color, #000000);
+    line-height: 1;
+    font-family: 'Poppins', sans-serif;
+}
+
+.music-banner__badge-label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-color, #000000);
+    line-height: 1;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Buy Now button */
+.music-banner__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--button-green, #00FF66);
+    color: #FAFAFA;
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    padding: 1.6rem 4rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    width: fit-content;
+    transition: opacity 0.2s ease;
+}
+
+.music-banner__btn:hover {
+    background-color: var(--hover-btn-color, #E07575);
+}
+
+/* Right side — JBL speaker image */
+.music-banner__image-wrap {
+    flex-shrink: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 1;
+}
+
+.music-banner__image-wrap::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35rem;
+    height: 35rem;
+    background-color: rgba(255, 255, 255, 1.25);
+    filter: blur(120px);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.music-banner__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    /* subtle drop-shadow glow */
+    filter: drop-shadow(0 8px 48px rgba(0, 0, 0, 0.7));
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .music-banner__title {
+        font-size: 3.6rem;
+    }
+
+    .music-banner__image {
+        width: 36rem;
+    }
+
+    .music-banner__content {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .music-banner__inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3.2rem;
+        padding: 4rem 3.2rem;
+    }
+
+    .music-banner__content {
+        max-width: 100%;
+    }
+
+    .music-banner__image {
+        width: 100%;
+        max-width: 100%;
+        max-height: 24rem;
+        object-position: center;
+    }
+
+    .music-banner__title {
+        font-size: 3.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .music-banner__inner {
+        padding: 3.2rem 2.4rem;
+    }
+
+    .music-banner__title {
+        font-size: 2.8rem;
+    }
+
+    .music-banner__badge {
+        width: 5.6rem;
+        height: 5.6rem;
+    }
+
+    .music-banner__badge-value {
+        font-size: 1.6rem;
+    }
+}
