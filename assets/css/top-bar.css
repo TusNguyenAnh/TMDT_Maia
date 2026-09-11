@@ -1,5 +1,5 @@
 .top-bar {
-    background-color: var(--black-color, #000000);
+    background-color: #000000;
     color: var(--text-color-white, #FAFAFA);
     height: 48px;
     display: flex;
