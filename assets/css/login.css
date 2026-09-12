@@ -1,0 +1,61 @@
+/* ── Buttons ── */
+.login__btn {
+  width: 30%;
+  height: 5.6rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  transition: background-color 0.2s ease, opacity 0.2s ease, transform 0.15s ease;
+  outline: none;
+  letter-spacing: 0.01em;
+}
+
+.login__btn:active {
+  transform: scale(0.98);
+}
+
+.login__btn:focus-visible {
+  outline: 3px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Primary — red */
+.login__btn--primary {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.login__btn--primary:hover {
+  background-color: var(--hover-btn-color);
+}
+
+.login__wrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login__forgot{
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--text-color);
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.login__forgot:hover{
+  color: var(--primary-color);
+}
+
+.login__forgot:focus-visible{
+  outline: 2px solid var(--primary-color);
+  outline-offset: 3px;
+  border-radius: 2px;
+}

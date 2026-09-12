@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Reset CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/grid.css">
+  <link rel="stylesheet" href="../assets/css/top-bar.css">
+  <link rel="stylesheet" href="../assets/css/header.css">
+  <link rel="stylesheet" href="../assets/css/footer.css">
+  <link rel="stylesheet" href="../assets/css/sign-up.css">
+
+
+  <title>Sign Up</title>
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="grid wide top-bar__container">
+      <div class="top-bar__text font_poppins">
+        Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+        <a href="#" class="top-bar__link">ShopNow</a>
+      </div>
+      <div class="top-bar__lang font_poppins">
+        English
+        <img src="../assets/images/arrow_down.svg" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="grid wide header__container">
+      <!-- Logo -->
+      <div class="header__logo">
+        <a href="../index.html">Exclusive</a>
+      </div>
+
+      <!-- Navbar -->
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a href="../index.html">Home</a></li>
+          <li class="header__nav-item"><a href="#">Contact</a></li>
+          <li class="header__nav-item"><a href="#">About</a></li>
+          <li class="header__nav-item header__nav-item-active"><a href="#">Sign Up</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions -->
+      <div class="header__actions">
+        <div class="header__search">
+          <input type="text" class="header__search-input font_poppins" placeholder="What are you looking for?">
+          <button class="header__search-btn">
+            <img src="../assets/images/search.svg" />
+          </button>
+        </div>
+
+        <div class="header__icons display-none">
+          <a href="#" aria-label="Wishlist">
+            <img src="../assets/images/heart.svg" />
+          </a>
+          <a href="#" aria-label="Cart">
+            <img src="../assets/images/cart.svg" />
+          </a>
+          <!-- Account Icon + Dropdown -->
+          <div class="header__account display-none" id="accountMenu">
+            <button class="header__account-btn" id="accountBtn" aria-label="Account" aria-expanded="false">
+              <img src="../assets/images/user_icon.svg" alt="Account" />
+            </button>
+            <div class="header__account-dropdown" id="accountDropdown" role="menu">
+              <a href="#" class="header__account-link" role="menuitem">
+                <img src="../assets/images/user_icon.svg" alt="" />
+                Manage My Account
+              </a>
+              <a href="#" class="header__account-link" role="menuitem">
+                <img src="../assets/images/order_icon.svg" alt="" />
+                My Order
+              </a>
+              <a href="#" class="header__account-link" role="menuitem">
+                <img src="../assets/images/cancel_icon.svg" alt="" />
+                My Cancellations
+              </a>
+              <a href="#" class="header__account-link" role="menuitem">
+                <img src="../assets/images/review_icon.svg" alt="" />
+                My Reviews
+              </a>
+              <a href="#" class="header__account-link header__account-link--logout" role="menuitem">
+                <img src="../assets/images/logout_icon.svg" alt="" />
+                Logout
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <!-- Sign Up Section -->
+  <main class="signup" id="signup-main">
+    <div class="signup__container">
+
+      <!-- Left: Image Panel -->
+      <div class="signup__image-panel" aria-hidden="true">
+        <div class="signup__image-overlay"></div>
+        <img src="../assets/images/product_17.svg" alt="Shopping model" class="signup__image"
+          onerror="this.style.display='none'" />
+      </div>
+
+      <!-- Right: Form Panel -->
+      <section class="signup__form-panel">
+        <div class="signup__form-wrap">
+
+          <h1 class="signup__title">Create an account</h1>
+          <p class="signup__subtitle font_poppins">Enter your details below</p>
+
+          <form class="signup__form" id="signupForm" novalidate>
+
+            <!-- Name -->
+            <div class="signup__field">
+              <label for="signup-name" class="signup__label sr-only">Name</label>
+              <input type="text" id="signup-name" name="name" class="signup__input font_poppins" placeholder="Name"
+                autocomplete="name" required />
+            </div>
+
+            <!-- Email or Phone -->
+            <div class="signup__field">
+              <label for="signup-email" class="sr-only">Email or Phone Number</label>
+              <input type="text" id="signup-email" name="email" class="signup__input font_poppins"
+                placeholder="Email or Phone Number" autocomplete="email" required />
+            </div>
+
+            <!-- Password -->
+            <div class="signup__field signup__field--password">
+              <label for="signup-password" class="sr-only">Password</label>
+              <input type="password" id="signup-password" name="password" class="signup__input font_poppins"
+                placeholder="Password" autocomplete="new-password" required />
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" class="signup__btn signup__btn--primary font_poppins" id="createAccountBtn">
+              Create Account
+            </button>
+
+            <!-- Google Sign-up -->
+            <button type="button" class="signup__btn signup__btn--google font_poppins" id="googleSignupBtn">
+              <img src="../assets/images/google_icon.svg" alt="" class="signup__google-icon" />
+              Sign up with Google
+            </button>
+
+          </form>
+
+          <!-- Login Link -->
+          <p class="signup__login-text font_poppins">
+            Already have account?
+            <a href="./login.html" class="signup__login-link" id="loginLink">Log in</a>
+          </p>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="grid wide">
+      <div class="footer__container">
+
+        <!-- Column 1: Subscribe -->
+        <div class="footer__col">
+          <a href="#" class="footer__logo font_poppins">Exclusive</a>
+          <h3 class="footer__title font_poppins">Subscribe</h3>
+          <p class="footer__text font_poppins">Get 10% off your first order</p>
+          <div class="footer__subscribe">
+            <input type="email" placeholder="Enter your email" class="footer__input font_poppins">
+            <button class="footer__send" aria-label="Subscribe">
+              <img src="../assets/images/send_icon.svg" alt="Send">
+            </button>
+          </div>
+        </div>
+
+        <!-- Column 2: Support -->
+        <div class="footer__col">
+          <h3 class="footer__title font_poppins">Support</h3>
+          <ul class="footer__list">
+            <li>
+              <p class="footer__text font_poppins">111 Bijoy sarani, Dhaka,<br>DH 1515, Bangladesh.</p>
+            </li>
+            <li><a href="mailto:exclusive@gmail.com" class="footer__link font_poppins">exclusive@gmail.com</a></li>
+            <li><a href="tel:+88015888889999" class="footer__link font_poppins">+88015-88888-9999</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Account -->
+        <div class="footer__col">
+          <h3 class="footer__title font_poppins">Account</h3>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link font_poppins">My Account</a></li>
+            <li><a href="#" class="footer__link font_poppins">Login / Register</a></li>
+            <li><a href="#" class="footer__link font_poppins">Cart</a></li>
+            <li><a href="#" class="footer__link font_poppins">Wishlist</a></li>
+            <li><a href="#" class="footer__link font_poppins">Shop</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Quick Link -->
+        <div class="footer__col">
+          <h3 class="footer__title font_poppins">Quick Link</h3>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link font_poppins">Privacy Policy</a></li>
+            <li><a href="#" class="footer__link font_poppins">Terms Of Use</a></li>
+            <li><a href="#" class="footer__link font_poppins">FAQ</a></li>
+            <li><a href="#" class="footer__link font_poppins">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5: Download App -->
+        <div class="footer__col">
+          <h3 class="footer__title font_poppins">Download App</h3>
+          <p class="footer__text font_poppins"
+            style="font-size: 1.2rem; color: rgba(250,250,250,0.7); margin-bottom: 0.8rem;">Save $3 with App New User
+            Only</p>
+
+          <div class="footer__app-wrapper">
+            <div class="footer__qr">
+              <img src="../assets/images/qr_code.svg" alt="QR Code">
+            </div>
+            <div class="footer__app-stores">
+              <a href="#"><img src="../assets/images/google_play_store_logo.svg" alt="Google Play"></a>
+              <a href="#"><img src="../assets/images/app_store_logo.svg" alt="App Store"></a>
+            </div>
+          </div>
+
+          <div class="footer__socials">
+            <a href="#" class="footer__social-link" aria-label="Facebook"><img src="../assets/images/facebook_icon.svg"
+                alt="Facebook"></a>
+            <a href="#" class="footer__social-link" aria-label="Twitter"><img src="../assets/images/twitter_icon.svg"
+                alt="Twitter"></a>
+            <a href="#" class="footer__social-link" aria-label="Instagram"><img
+                src="../assets/images/instagram_icon.svg" alt="Instagram"></a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn"><img src="../assets/images/linkedin_icon.svg"
+                alt="LinkedIn"></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <img src="../assets/images/copyright_icon.svg" alt="Copyright" class="footer__copyright-icon">
+      <p class="footer__copyright font_poppins">Copyright Rimel 2022. All right reserved</p>
+    </div>
+  </footer>
+</body>
+
+</html>
