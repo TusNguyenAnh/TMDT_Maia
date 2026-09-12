@@ -134,7 +134,7 @@
     justify-content: center;
 }
 
-.product-card__image-box img {
+.product-card__image-box > img {
     position: absolute;
     top: 50%;
     left: 50%;
