@@ -122,7 +122,13 @@
                         </div>
                         <div class="cart__item-price">$650</div>
                         <div class="cart__item-quantity">
-                            <input type="number" value="1" min="1" class="cart__quantity-input">
+                            <div class="cart__quantity-wrapper">
+                                <input type="text" value="01" min="1" class="cart__quantity-input">
+                                <div class="cart__quantity-actions">
+                                    <i class="fa-solid fa-angle-up"></i>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div>
                         </div>
                         <div class="cart__item-subtotal">$650</div>
                     </div>
@@ -140,7 +146,13 @@
                         </div>
                         <div class="cart__item-price">$550</div>
                         <div class="cart__item-quantity">
-                            <input type="number" value="2" min="1" class="cart__quantity-input">
+                            <div class="cart__quantity-wrapper">
+                                <input type="text" value="02" min="1" class="cart__quantity-input">
+                                <div class="cart__quantity-actions">
+                                    <i class="fa-solid fa-angle-up"></i>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div>
                         </div>
                         <div class="cart__item-subtotal">$1100</div>
                     </div>
@@ -178,9 +190,9 @@
                                 <span>Total:</span>
                                 <span>$1750</span>
                             </div>
-                            <div class="cart__total-checkout">
+                            <a href="../pages/checkout.html" class="cart__total-checkout">
                                 <button class="btn btn--primary cart__checkout-btn">Proceed to checkout</button>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -282,6 +294,7 @@
     </footer>
 
     <script src="../js/home.js"></script>
+    <script src="../js/cart.js"></script>
 </body>
 
 </html>
