@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Reset CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/grid.css">
+  <link rel="stylesheet" href="../assets/css/top-bar.css">
+  <link rel="stylesheet" href="../assets/css/header.css">
+  <link rel="stylesheet" href="../assets/css/hero.css">
+  <link rel="stylesheet" href="../assets/css/flash_sales.css">
+  <link rel="stylesheet" href="../assets/css/categories.css">
+  <link rel="stylesheet" href="../assets/css/best_sell.css">
+  <link rel="stylesheet" href="../assets/css/music_banner.css">
+  <link rel="stylesheet" href="../assets/css/explore_product.css">
+  <link rel="stylesheet" href="../assets/css/new_arrival.css">
+  <link rel="stylesheet" href="../assets/css/services.css">
+  <link rel="stylesheet" href="../assets/css/footer.css">
+
+
+  <title>E-Commerce</title>
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="grid wide top-bar__container">
+      <div class="top-bar__text font_poppins">
+        Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+        <a href="#" class="top-bar__link">ShopNow</a>
+      </div>
+      <div class="top-bar__lang font_poppins">
+        English
+        <img src="../assets/images/arrow_down.svg" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="grid wide header__container">
+      <!-- Logo -->
+      <div class="header__logo">
+        <a href="../index.html">Exclusive</a>
+      </div>
+
+      <!-- Navbar -->
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item header__nav-item-active"><a href="../index.html">Home</a></li>
+          <li class="header__nav-item"><a href="#">Contact</a></li>
+          <li class="header__nav-item"><a href="#">About</a></li>
+          <li class="header__nav-item"><a href="./sign-up.html">Sign Up</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions -->
+      <div class="header__actions">
+        <div class="header__search">
+          <input type="text" class="header__search-input font_poppins" placeholder="What are you looking for?">
+          <button class="header__search-btn">
+            <img src="../assets/images/search.svg" />
+          </button>
+        </div>
+
+        <div class="header__icons">
+          <a href="./wishlist.html" aria-label="Wishlist">
+            <img src="../assets/images/heart.svg" />
+          </a>
+          <a href="./cart.html" aria-label="Cart">
+            <img src="../assets/images/cart.svg" />
+          </a>
+          <!-- Account Icon + Dropdown -->
+          <div class="header__account" id="accountMenu">
+            <button class="header__account-btn" id="accountBtn" aria-label="Account" aria-expanded="false">
+              <img src="../assets/images/user_icon.svg" alt="Account" />
+            </button>
+            <div class="header__account-dropdown" id="accountDropdown" role="menu">
+              <a href="#" class="header__account-link" role="menuitem">
+                <img src="../assets/images/user_icon.svg" alt="" />
+                Manage My Account
+              </a>
+              <a href="#" class="header__account-link" role="menuitem">
+                <img src="../assets/images/order_icon.svg" alt="" />
+                My Order
+              </a>
+              <a href="#" class="header__account-link" role="menuitem">
+                <img src="../assets/images/cancel_icon.svg" alt="" />
+                My Cancellations
+              </a>
+              <a href="#" class="header__account-link" role="menuitem">
+                <img src="../assets/images/review_icon.svg" alt="" />
+                My Reviews
+              </a>
+              <a href="#" class="header__account-link header__account-link--logout" role="menuitem">
+                <img src="../assets/images/logout_icon.svg" alt="" />
+                Logout
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+      <div class="grid wide hero__container">
+        <!-- Sidebar Menu -->
+        <div class="hero__sidebar">
+          <!-- Women's Fashion with sub-menu -->
+          <ul class="hero__sidebar-wrapper">
+            <li class="hero__sidebar-item">
+              <a href="#" class="hero__sidebar-item-link hero__sidebar-item--has-sub">
+                Woman's Fashion
+                <img src="../assets/images/arrow_right.svg" class="hero__sidebar-icon" alt="arrow right" />
+              </a>
+              <div class="hero__sidebar-sub">
+                <a href="#" class="hero__sidebar-sub-item">Dresses</a>
+                <a href="#" class="hero__sidebar-sub-item">Tops &amp; Blouses</a>
+                <a href="#" class="hero__sidebar-sub-item">Shoes</a>
+                <a href="#" class="hero__sidebar-sub-item">Accessories</a>
+                <a href="#" class="hero__sidebar-sub-item">Bags &amp; Purses</a>
+              </div>
+            </li>
+
+            <li class="hero__sidebar-item">
+              <a href="#" class="hero__sidebar-item-link">
+                Men's Fashion
+                <img src="../assets/images/arrow_right.svg" class="hero__sidebar-icon" alt="arrow right" />
+              </a>
+            </li>
+
+            <li class="hero__sidebar-item">
+              <a href="#" class="hero__sidebar-item-link">Electronics</a>
+            </li>
+
+            <li class="hero__sidebar-item">
+              <a href="#" class="hero__sidebar-item-link">Home & Lifestyle</a>
+            </li>
+
+            <li class="hero__sidebar-item">
+              <a href="#" class="hero__sidebar-item-link">Medicine</a>
+            </li>
+
+            <li class="hero__sidebar-item">
+              <a href="#" class="hero__sidebar-item-link">Sports & Outdoor</a>
+            </li>
+
+            <li class="hero__sidebar-item">
+              <a href="#" class="hero__sidebar-item-link">Baby's & Toys</a>
+            </li>
+
+            <li class="hero__sidebar-item">
+              <a href="#" class="hero__sidebar-item-link">Groceries & Pets</a>
+            </li>
+
+            <li class="hero__sidebar-item">
+              <a href="#" class="hero__sidebar-item-link">Health & Beauty</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Main Banner -->
+        <div class="hero__banner">
+          <div class="hero__banner-wrapper">
+            <!-- Text Content -->
+            <div class="hero__banner-content">
+              <div class="hero__banner-series">
+                <img src="../assets/images/apple_gray_logo.svg" alt="Apple Logo" class="hero__banner-logo">
+                <span class="font_poppins">iPhone 14 Series</span>
+              </div>
+              <h1 class="hero__banner-title">Up to 10%<br>off Voucher</h1>
+              <a href="#" class="hero__banner-link">
+                <span class="font_poppins">Shop Now</span>
+                <img src="../assets/images/arrow_right_2.svg" alt="arrow right">
+              </a>
+            </div>
+
+            <div class="hero__banner-nav">
+              <button class="hero__banner-dot" aria-label="Go to slide 1"></button>
+              <button class="hero__banner-dot" aria-label="Go to slide 2"></button>
+              <button class="hero__banner-dot hero__banner-dot--active" aria-label="Go to slide 3"></button>
+              <button class="hero__banner-dot" aria-label="Go to slide 4"></button>
+              <button class="hero__banner-dot" aria-label="Go to slide 5"></button>
+            </div>
+
+            <!-- Image -->
+            <img src="../assets/images/hero_endframe.svg" alt="iPhone 14" class="hero__banner-image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Flash Sales Section -->
+    <section class="flash-sales">
+      <div class="grid wide">
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-header__box"></div>
+          <div class="section-header__subtitle font_poppins">Today's</div>
+        </div>
+
+        <!-- Section Title & Countdown -->
+        <div class="section-title-wrapper">
+          <div class="section-title-group">
+            <h2 class="section-title">Flash Sales</h2>
+            <div class="countdown font_poppins">
+              <div class="countdown__item">
+                <span class="countdown__label">Days</span>
+                <span class="countdown__value">03</span>
+              </div>
+              <span class="countdown__colon">:</span>
+              <div class="countdown__item">
+                <span class="countdown__label">Hours</span>
+                <span class="countdown__value">23</span>
+              </div>
+              <span class="countdown__colon">:</span>
+              <div class="countdown__item">
+                <span class="countdown__label">Minutes</span>
+                <span class="countdown__value">19</span>
+              </div>
+              <span class="countdown__colon">:</span>
+              <div class="countdown__item">
+                <span class="countdown__label">Seconds</span>
+                <span class="countdown__value">56</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Arrows -->
+          <div class="section-nav-arrows">
+            <button class="section-nav-arrows__btn" aria-label="Previous">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="section-nav-arrows__btn" aria-label="Next">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid">
+          <!-- Product 1 -->
+          <article class="product-card">
+            <div class="product-card__image-box">
+              <span class="product-card__badge font_poppins">-40%</span>
+              <div class="product-card__actions">
+                <button class="product-card__action-btn" aria-label="Add to wishlist"><img
+                    src="../assets/images/heart.svg" alt="wishlist"></button>
+                <button class="product-card__action-btn" aria-label="Quick view"><img src="../assets/images/eye.svg"
+                    alt="quick view"></button>
+              </div>
+              <img src="../assets/images/product_1.svg" alt="HAVIT HV-G92 Gamepad">
+              <button class="product-card__add-to-cart font_poppins">Add To Cart</button>
+            </div>
+            <a href="#" class="product-card__title">HAVIT HV-G92 Gamepad</a>
+            <div class="product-card__price-group font_poppins">
+              <span class="product-card__price-current">$120</span>
+              <span class="product-card__price-old">$160</span>
+            </div>
+            <div class="product-card__rating">
+              <div class="product-card__stars">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/start.svg" alt="star">
+              </div>
+              <span class="product-card__reviews font_poppins">(88)</span>
+            </div>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="product-card">
+            <div class="product-card__image-box">
+              <span class="product-card__badge font_poppins">-35%</span>
+              <div class="product-card__actions">
+                <button class="product-card__action-btn" aria-label="Add to wishlist"><img
+                    src="../assets/images/heart.svg" alt="wishlist"></button>
+                <button class="product-card__action-btn" aria-label="Quick view"><img src="../assets/images/eye.svg"
+                    alt="quick view"></button>
+              </div>
+              <img src="../assets/images/product_2.svg" alt="AK-900 Wired Keyboard">
+              <button class="product-card__add-to-cart font_poppins">Add To Cart</button>
+            </div>
+            <a href="#" class="product-card__title">AK-900 Wired Keyboard</a>
+            <div class="product-card__price-group font_poppins">
+              <span class="product-card__price-current">$960</span>
+              <span class="product-card__price-old">$1160</span>
+            </div>
+            <div class="product-card__rating">
+              <div class="product-card__stars">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/start_disabled.svg" alt="star">
+
+              </div>
+              <span class="product-card__reviews font_poppins">(75)</span>
+            </div>
+          </article>
+
+          <!-- Product 3 -->
+          <article class="product-card">
+            <div class="product-card__image-box">
+              <span class="product-card__badge font_poppins">-30%</span>
+              <div class="product-card__actions">
+                <button class="product-card__action-btn" aria-label="Add to wishlist"><img
+                    src="../assets/images/heart.svg" alt="wishlist"></button>
+                <button class="product-card__action-btn" aria-label="Quick view"><img src="../assets/images/eye.svg"
+                    alt="quick view"></button>
+              </div>
+              <img src="../assets/images/product_3.svg" alt="IPS LCD Gaming Monitor">
+              <button class="product-card__add-to-cart font_poppins">Add To Cart</button>
+            </div>
+            <a href="#" class="product-card__title">IPS LCD Gaming Monitor</a>
+            <div class="product-card__price-group font_poppins">
+              <span class="product-card__price-current">$370</span>
+              <span class="product-card__price-old">$400</span>
+            </div>
+            <div class="product-card__rating">
+              <div class="product-card__stars">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/start.svg" alt="star">
+              </div>
+              <span class="product-card__reviews font_poppins">(99)</span>
+            </div>
+          </article>
+
+          <!-- Product 4 -->
+          <article class="product-card">
+            <div class="product-card__image-box">
+              <span class="product-card__badge font_poppins">-25%</span>
+              <div class="product-card__actions">
+                <button class="product-card__action-btn" aria-label="Add to wishlist"><img
+                    src="../assets/images/heart.svg" alt="wishlist"></button>
+                <button class="product-card__action-btn" aria-label="Quick view"><img src="../assets/images/eye.svg"
+                    alt="quick view"></button>
+              </div>
+              <img src="../assets/images/product_4.svg" alt="S-Series Comfort Chair">
+              <button class="product-card__add-to-cart font_poppins">Add To Cart</button>
+            </div>
+            <a href="#" class="product-card__title">S-Series Comfort Chair</a>
+            <div class="product-card__price-group font_poppins">
+              <span class="product-card__price-current">$375</span>
+              <span class="product-card__price-old">$400</span>
+            </div>
+            <div class="product-card__rating">
+              <div class="product-card__stars">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/star_half.svg" alt="half star">
+              </div>
+              <span class="product-card__reviews font_poppins">(99)</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- View All Button -->
+        <div class="flash-sales__view-all">
+          <button class="btn btn--primary font_poppins">View All Products</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" aria-labelledby="categories-title">
+      <div class="grid wide">
+
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-header__box"></div>
+          <div class="section-header__subtitle font_poppins">Categories</div>
+        </div>
+
+        <!-- Section Title & Nav Arrows -->
+        <div class="section-title-wrapper">
+          <h2 class="section-title" id="categories-title">Browse By Category</h2>
+          <div class="section-nav-arrows">
+            <button class="section-nav-arrows__btn" aria-label="Previous category">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="section-nav-arrows__btn" aria-label="Next category">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Category Grid -->
+        <div class="category-grid" role="list">
+          <a href="#" class="category-card" role="listitem" aria-label="Phones category">
+            <span class="category-card__icon" aria-hidden="true">
+              <img src="../assets/images/phone_cate.svg" alt="">
+            </span>
+            <span class="category-card__name">Phones</span>
+          </a>
+
+          <a href="#" class="category-card" role="listitem" aria-label="Computers category">
+            <span class="category-card__icon" aria-hidden="true">
+              <img src="../assets/images/computer_cate.svg" alt="">
+            </span>
+            <span class="category-card__name">Computers</span>
+          </a>
+
+          <a href="#" class="category-card" role="listitem" aria-label="SmartWatch category">
+            <span class="category-card__icon" aria-hidden="true">
+              <img src="../assets/images/smartwatch_cate.svg" alt="">
+            </span>
+            <span class="category-card__name">SmartWatch</span>
+          </a>
+
+          <a href="#" class="category-card category-card--active" role="listitem" aria-label="Camera category"
+            aria-current="true">
+            <span class="category-card__icon" aria-hidden="true">
+              <img src="../assets/images/camera_cate.svg" alt="">
+            </span>
+            <span class="category-card__name">Camera</span>
+          </a>
+
+          <a href="#" class="category-card" role="listitem" aria-label="HeadPhones category">
+            <span class="category-card__icon" aria-hidden="true">
+              <img src="../assets/images/headphone_cate.svg" alt="">
+            </span>
+            <span class="category-card__name">HeadPhones</span>
+          </a>
+
+          <a href="#" class="category-card" role="listitem" aria-label="Gaming category">
+            <span class="category-card__icon" aria-hidden="true">
+              <img src="../assets/images/gaming_cate.svg" alt="">
+            </span>
+            <span class="category-card__name">Gaming</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Best Selling Section -->
+    <section class="best-selling" aria-labelledby="best-selling-title">
+      <div class="grid wide">
+
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-header__box"></div>
+          <div class="section-header__subtitle font_poppins">This Month</div>
+        </div>
+
+        <!-- Section Title & Nav Arrows -->
+        <div class="section-title-wrapper">
+          <h2 class="section-title" id="best-selling-title">Best Selling Products</h2>
+          <div class="best-sell__view-all">
+            <button class="btn btn--primary font_poppins">View All</button>
+          </div>
+        </div>
+
+        <!-- Section Product Grid -->
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-card__image-box">
+              <span class="product-card__badge font_poppins display-none">-40%</span>
+              <div class="product-card__actions">
+                <button class="product-card__action-btn" aria-label="Add to wishlist">
+                  <img src="../assets/images/heart.svg" alt="wishlist"></button>
+                <button class="product-card__action-btn" aria-label="Quick view">
+                  <img src="../assets/images/eye.svg" alt="quick view"></button>
+              </div>
+              <img src="../assets/images/product_5.svg" alt="The north coat">
+              <button class="product-card__add-to-cart font_poppins">Add To Cart</button>
+            </div>
+            <a href="#" class="product-card__title">The north coat</a>
+            <div class="product-card__price-group font_poppins">
+              <span class="product-card__price-current">$260</span>
+              <span class="product-card__price-old">$360</span>
+            </div>
+            <div class="product-card__rating">
+              <div class="product-card__stars">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/start.svg" alt="star">
+              </div>
+              <span class="product-card__reviews font_poppins">(65)</span>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__image-box">
+              <span class="product-card__badge font_poppins display-none">-40%</span>
+              <div class="product-card__actions">
+                <button class="product-card__action-btn" aria-label="Add to wishlist">
+                  <img src="../assets/images/heart.svg" alt="wishlist"></button>
+                <button class="product-card__action-btn" aria-label="Quick view">
+                  <img src="../assets/images/eye.svg" alt="quick view"></button>
+              </div>
+              <img src="../assets/images/product_6.svg" alt="Gucci duffle bag">
+              <button class="product-card__add-to-cart font_poppins">Add To Cart</button>
+            </div>
+            <a href="#" class="product-card__title">Gucci duffle bag</a>
+            <div class="product-card__price-group font_poppins">
+              <span class="product-card__price-current">$960</span>
+              <span class="product-card__price-old">$1160</span>
+            </div>
+            <div class="product-card__rating">
+              <div class="product-card__stars">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/star_half.svg" alt="half star">
+
+              </div>
+              <span class="product-card__reviews font_poppins">(65)</span>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__image-box">
+              <span class="product-card__badge font_poppins display-none">-40%</span>
+              <div class="product-card__actions">
+                <button class="product-card__action-btn" aria-label="Add to wishlist">
+                  <img src="../assets/images/heart.svg" alt="wishlist"></button>
+                <button class="product-card__action-btn" aria-label="Quick view">
+                  <img src="../assets/images/eye.svg" alt="quick view">
+                </button>
+              </div>
+              <img src="../assets/images/product_7.svg" alt="RGB liquid CPU Cooler">
+              <button class="product-card__add-to-cart font_poppins">Add To Cart</button>
+            </div>
+            <a href="#" class="product-card__title">RGB liquid CPU Cooler</a>
+            <div class="product-card__price-group font_poppins">
+              <span class="product-card__price-current">$160</span>
+              <span class="product-card__price-old">$170</span>
+            </div>
+            <div class="product-card__rating">
+              <div class="product-card__stars">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/star_half.svg" alt="half star">
+              </div>
+              <span class="product-card__reviews font_poppins">(65)</span>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__image-box">
+              <span class="product-card__badge font_poppins display-none">-40%</span>
+              <div class="product-card__actions">
+                <button class="product-card__action-btn" aria-label="Add to wishlist">
+                  <img src="../assets/images/heart.svg" alt="wishlist"></button>
+                <button class="product-card__action-btn" aria-label="Quick view">
+                  <img src="../assets/images/eye.svg" alt="quick view">
+                </button>
+              </div>
+              <img src="../assets/images/product_8.svg" alt="Small BookSelf">
+              <button class="product-card__add-to-cart font_poppins">Add To Cart</button>
+            </div>
+            <a href="#" class="product-card__title">Small BookSelf</a>
+            <div class="product-card__price-group font_poppins">
+              <span class="product-card__price-current">$360</span>
+            </div>
+            <div class="product-card__rating">
+              <div class="product-card__stars">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/start.svg" alt="star">
+                <img src="../assets/images/start.svg" alt="star">
+              </div>
+              <span class="product-card__reviews font_poppins">(65)</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Music Banner -->
+    <section class="music-banner" aria-label="Enhance Your Music Experience promotion">
+      <div class="grid wide">
+        <div class="music-banner__inner">
+          <!-- Left: text + countdown + CTA -->
+          <div class="music-banner__content">
+            <p class="music-banner__category">Categories</p>
+            <h2 class="music-banner__title">Enhance Your<br>Music Experience</h2>
+
+            <!-- Circular countdown badges -->
+            <div class="music-banner__countdown" role="timer" aria-label="Offer ends in">
+              <div class="music-banner__badge">
+                <span class="music-banner__badge-value" id="mb-hours">23</span>
+                <span class="music-banner__badge-label">Hours</span>
+              </div>
+              <div class="music-banner__badge">
+                <span class="music-banner__badge-value" id="mb-days">05</span>
+                <span class="music-banner__badge-label">Days</span>
+              </div>
+              <div class="music-banner__badge">
+                <span class="music-banner__badge-value" id="mb-minutes">59</span>
+                <span class="music-banner__badge-label">Minutes</span>
+              </div>
+              <div class="music-banner__badge">
+                <span class="music-banner__badge-value" id="mb-seconds">35</span>
+                <span class="music-banner__badge-label">Seconds</span>
+              </div>
+            </div>
+
+            <a href="#" class="music-banner__btn font_poppins">Buy Now!</a>
+          </div>
+
+          <!-- Right: JBL speaker image -->
+          <div class="music-banner__image-wrap">
+            <img src="../assets/images/product_jbl.svg" alt="JBL Boombox speaker" class="music-banner__image">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!--Explore Products-->
+    <section class="explore-product">
+      <div class="grid wide">
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-header__box"></div>
+          <div class="section-header__subtitle font_poppins">Our Products</div>
+        </div>
+
+        <!-- Section Title & Countdown -->
+        <div class="section-title-wrapper">
+          <div class="section-title-group">
+            <h2 class="section-title">Explore Our Products</h2>
+          </div>
+
+          <!-- Arrows -->
+          <div class="section-nav-arrows">
+            <button class="section-nav-arrows__btn" aria-label="Previous">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="section-nav-arrows__btn" aria-label="Next">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid">
+          <!-- Product 1 -->
+          <article class="product-card">
+            <div class="product-card__image-box">
+              <span class="product-card__badge font_poppins display-none">-40%</span>
+              <div class="product-card__actions">
+                <button class="product-card__action-btn" aria-label="Add to wishlist"><img
+                    src="../assets/images/heart.svg" alt="wishlist"></button>
+                <button class="product-card__action-btn" aria-label="Quick view"><img src="../assets/images/eye.svg"
+                    alt="quick view"></button>
+              </div>
+              <img src="../assets/images/product_9.svg" alt="Breed Dry Dog Food">
+              <button class="product-card__add-to-cart font_poppins">Add To Cart</button>
+            </div>
+            <a href="#" class="product-card__title">Breed Dry Dog Food</a>
+            <div class="product-card__price-group font_poppins">
+              <span class="product-card__price-current">$100</span>
+              <span class="product-card__price-old display-none">$160</span>
+              <div class="product-card__rating">
+                <div class="product-card__stars">
+                  <img src="../assets/images/start.svg" alt="star">
+                  <img src="../assets/images/start.svg" alt="star">
+                  <img src="../assets/images/start.svg" alt="star">
+                  <img src="../assets/images/start_disabled.svg" alt="star disabled">
+                  <img src="../assets/images/start_disabled.svg" alt="star disabled">
+                </div>
+                <span class="product-card__reviews font_poppins">(35)</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__image-box">
+              <span class="product-card__badge font_poppins display-none">-40%</span>
+              <div class="product-card__actions">
+                <button class="product-card__action-btn" aria-label="Add to wishlist"><img
+                    src="../assets/images/heart.svg" alt="wishlist"></button>
+                <button class="product-card__action-btn" aria-label="Quick view"><img src="../assets/images/eye.svg"
+                    alt="quick view"></button>
+              </div>
+              <img src="../assets/images/product_10.svg" alt="CANON EOS DSLR Camera">
+              <button class="product-card__add-to-cart font_poppins">Add To Cart</button>
+            </div>
+            <a href="#" class="product-card__title">CANON EOS DSLR Camera</a>
+            <div class="product-card__price-group font_poppins">
+              <span class="product-card__price-current">$360</span>
+              <span class="product-card__price-old display-none">$160</span>
+              <div class="product-card__rating">
+                <div class="product-card__stars">
+                  <img src="../assets/images/start.svg" alt="star">
+                  <img src="../assets/images/start.svg" alt="star">
+                  <img src="../assets/images/start.svg" alt="star">
+                  <img src="../assets/images/start.svg" alt="star">
+                  <img src="../assets/images/start_disabled.svg" alt="star disabled">
+                </div>
+                <span class="product-card__reviews font_poppins">(95)</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__image-box">
+              <span class="product-card__badge font_poppins display-none">-40%</span>
+              <div class="product-card__actions">
+                <button class="product-card__action-btn" aria-label="Add to wishlist"><img
+                    src="../assets/images/heart.svg" alt="wishlist"></button>
+                <button class="product-card__action-btn" aria-label="Quick view"><img src="../assets/images/eye.svg"
+                    alt="quick view"></button>
+              </div>
+              <img src="../assets/images/product_11.svg" alt="ASUS FHD Gaming Laptop">
+              <button class="product-card__add-to-cart font_poppins">Add To Cart</button>
+            </div>
+            <a href="#" class="product-card__title">ASUS FHD Gaming Laptop</a>
+            <div class="product-card__price-group font_poppins">
+              <span class="product-card__price-current">$700</span>
+              <span class="product-card__price-old display-none">$160</span>
+              <div class="product-card__rating">
+                <div class="product-card__stars">
+                  <img src="../assets/images/start.svg" alt="star">
+                  <img src="../assets/images/start.svg" alt="star">
+                  <img src="../assets/images/start.svg" alt="star">
+                  <img src="../assets/images/start.svg" alt="star">
+                  <img src="../assets/images/start.svg" alt="star">
+                </div>
+                <span class="product-card__reviews font_poppins">(325)</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__image-box">
+              <span class="product-card__badge font_poppins display-none">-40%</span>
+              <div class="product-card__actions">
+                <button class="product-card__action-btn" aria-label="Add to wishlist"><img
+                    src="../assets/images/heart.svg" alt="wishlist"></button>
+                <button class="product-card__action-btn" aria-label="Quick view"><img src="../assets/images/eye.svg"
+                    alt="quick view"></button>
+              </div>
+              <img src="../assets/images/product_12.svg" alt="Curology Product Set">
+              <button class="product-card__add-to-cart font_poppins">Add To Cart</button>
+            </div>
+            <a href="#" class="product-card__title">Curology Product Set</a>
+            <div class="product-card__price-group font_poppins">
+              <span class="product-card__price-current">$500</span>
+              <span class="product-card__price-old display-none">$160</span>
+              <div class="product-card__rating">
+                <div class="product-card__stars">
+                  <img src="../assets/images/start.svg" alt="star">
+                  <img src="../assets/images/start.svg" alt="star">
+                  <img src="../assets/images/start.svg" alt="star">
+                  <img src="../assets/images/start.svg" alt="star">
+                  <img src="../assets/images/start_disabled.svg" alt="star disabled">
+                </div>
+                <span class="product-card__reviews font_poppins">(145)</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="product-grid">
+          <!-- Product 12 -->
+          <article class="product-card">
+            <div class="product-card__image-box">
+              <span class="product-card__badge-new font_poppins">NEW</span>
+              <div class="product-card__actions">
+                <button class="product-card__action-btn" aria-label="Add to wishlist"><img
+                    src="../assets/images/heart.svg" alt="wishlist"></button>
+                <button class="product-card__action-btn" aria-label="Quick view"><img src="../assets/images/eye.svg"
+                    alt="quick view"></button>
+              </div>
+              <img src="../assets/images/product_13.svg" alt="Kids Electric Car">
+              <button class="product-card__add-to-cart font_poppins">Add To Cart</button>
+            </div>
+            <a href="#" class="product-card__title">Kids Electric Car</a>
+            <div class="product-card__price-group font_poppins">
+              <span class="product-card__price-current">$960</span>
+              <span class="product-card__price-old display-none">$160</span>
+              <div class="product-card__rating">
+                <div class="product-card__stars">
+                  <img src="../assets/images/start.svg" alt="star">
+                  <img src="../assets/images/start.svg" alt="star">
+                  <img src="../assets/images/start.svg" alt="star">
+                  <img src="../assets/images/start.svg" alt="star">
+                  <img src="../assets/images/start.svg" alt="star">
+                </div>
+                <span class="product-card__reviews font_poppins">(65)</span>
+              </div>
+            </div>
+            <div class="product-card__colors">
+              <div class="product-card__color product-card__color--active" style="background-color: #FB1314;"
+                role="button" aria-label="Red color" tabindex="0"></div>
+              <div class="product-card__color" style="background-color: #DB4444;" role="button"
+                aria-label="Dark red color" tabindex="0"></div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__image-box">
+              <span class="product-card__badge-new font_poppins display-none">NEW</span>
+              <div class="product-card__actions">
+                <button class="product-card__action-btn" aria-label="Add to wishlist"><img
+                    src="../assets/images/heart.svg" alt="wishlist"></button>
+                <button class="product-card__action-btn" aria-label="Quick view"><img src="../assets/images/eye.svg"
+                    alt="quick view"></button>
+              </div>
+              <img src="../assets/images/product_14.svg" alt="Jr. Zoom Soccer Cleats">
+              <button class="product-card__add-to-cart font_poppins">Add To Cart</button>
+            </div>
+            <a href="#" class="product-card__title">Jr. Zoom Soccer Cleats</a>
+            <div class="product-card__price-group font_poppins">
+              <span class="product-card__price-current">$1160</span>
+              <span class="product-card__price-old display-none">$160</span>
+              <div class="product-card__rating">
+                <div class="product-card__stars">
+                  <img src="../assets/images/start.svg" alt="star">
+                  <img src="../assets/images/start.svg" alt="star">
+                  <img src="../assets/images/start.svg" alt="star">
+                  <img src="../assets/images/start.svg" alt="star">
+                  <img src="../assets/images/start.svg" alt="star">
+                </div>
+                <span class="product-card__reviews font_poppins">(35)</span>
+              </div>
+            </div>
+            <div class="product-card__colors">
+              <div class="product-card__color product-card__color--active" style="background-color: #EEFF61;"
+                role="button" aria-label="Red color" tabindex="0"></div>
+              <div class="product-card__color" style="background-color: #DB4444;" role="button"
+                aria-label="Dark red color" tabindex="0"></div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__image-box">
+              <span class="product-card__badge-new font_poppins">NEW</span>
+              <div class="product-card__actions">
+                <button class="product-card__action-btn" aria-label="Add to wishlist"><img
+                    src="../assets/images/heart.svg" alt="wishlist"></button>
+                <button class="product-card__action-btn" aria-label="Quick view"><img src="../assets/images/eye.svg"
+                    alt="quick view"></button>
+              </div>
+              <img src="../assets/images/product_15.svg" alt="GP11 Shooter USB Gamepad">
+              <button class="product-card__add-to-cart font_poppins">Add To Cart</button>
+            </div>
+            <a href="#" class="product-card__title">GP11 Shooter USB Gamepad</a>
+            <div class="product-card__price-group font_poppins">
+              <span class="product-card__price-current">$660</span>
+              <span class="product-card__price-old display-none">$160</span>
+              <div class="product-card__rating">
+                <div class="product-card__stars">
+                  <img src="../assets/images/start.svg" alt="star">
+                  <img src="../assets/images/start.svg" alt="star">
+                  <img src="../assets/images/start.svg" alt="star">
+                  <img src="../assets/images/start.svg" alt="star">
+                  <img src="../assets/images/star_half.svg" alt="half star">
+                </div>
+                <span class="product-card__reviews font_poppins">(55)</span>
+              </div>
+            </div>
+            <div class="product-card__colors">
+              <div class="product-card__color product-card__color--active" style="background-color: #000000;"
+                role="button" aria-label="Red color" tabindex="0"></div>
+              <div class="product-card__color" style="background-color: #DB4444;" role="button"
+                aria-label="Dark red color" tabindex="0"></div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__image-box">
+              <span class="product-card__badge-new font_poppins display-none">NEW</span>
+              <div class="product-card__actions">
+                <button class="product-card__action-btn" aria-label="Add to wishlist"><img
+                    src="../assets/images/heart.svg" alt="wishlist"></button>
+                <button class="product-card__action-btn" aria-label="Quick view"><img src="../assets/images/eye.svg"
+                    alt="quick view"></button>
+              </div>
+              <img src="../assets/images/product_13.svg" alt="Quilted Satin Jacket">
+              <button class="product-card__add-to-cart font_poppins">Add To Cart</button>
+            </div>
+            <a href="#" class="product-card__title">Quilted Satin Jacket</a>
+            <div class="product-card__price-group font_poppins">
+              <span class="product-card__price-current">$660</span>
+              <span class="product-card__price-old display-none">$160</span>
+              <div class="product-card__rating">
+                <div class="product-card__stars">
+                  <img src="../assets/images/start.svg" alt="star">
+                  <img src="../assets/images/start.svg" alt="star">
+                  <img src="../assets/images/start.svg" alt="star">
+                  <img src="../assets/images/start.svg" alt="star">
+                  <img src="../assets/images/star_half.svg" alt="half star">
+                </div>
+                <span class="product-card__reviews font_poppins">(55)</span>
+              </div>
+            </div>
+            <div class="product-card__colors">
+              <div class="product-card__color product-card__color--active" style="background-color: #000000;"
+                role="button" aria-label="Red color" tabindex="0"></div>
+              <div class="product-card__color" style="background-color: #DB4444;" role="button"
+                aria-label="Dark red color" tabindex="0"></div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- View All Button -->
+        <div class="flash-sales__view-all">
+          <button class="btn btn--primary font_poppins">View All Products</button>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- New Arrival Section -->
+    <section class="new-arrival" aria-labelledby="new-arrival-title">
+      <div class="grid wide">
+
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-header__box"></div>
+          <div class="section-header__subtitle font_poppins">Featured</div>
+        </div>
+
+        <!-- Section Title -->
+        <div class="section-title-wrapper">
+          <h2 class="section-title" id="new-arrival-title">New Arrival</h2>
+        </div>
+
+        <!-- Grid Layout -->
+        <div class="new-arrival-grid">
+          <!-- Left Column (PS5) -->
+          <div class="new-arrival__col">
+            <div class="new-arrival__item new-arrival__item--ps5">
+              <img src="../assets/images/product_playstation.svg" alt="PlayStation 5">
+              <div class="new-arrival__content">
+                <h3 class="new-arrival__title">PlayStation 5</h3>
+                <p class="new-arrival__desc font_poppins">Black and White version of the PS5 coming out on sale.</p>
+                <a href="#" class="new-arrival__link font_poppins">Shop Now</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="new-arrival__col">
+            <!-- Top Row (Women's Collection) -->
+            <div class="new-arrival__item new-arrival__item--women">
+              <img src="../assets/images/woman.svg" alt="Women's Collections" style="width: 80%;">
+              <div class="new-arrival__content">
+                <h3 class="new-arrival__title">Women's Collections</h3>
+                <p class="new-arrival__desc font_poppins">Featured woman collections that give you another vibe.</p>
+                <a href="#" class="new-arrival__link font_poppins">Shop Now</a>
+              </div>
+            </div>
+
+            <!-- Bottom Row Split (Speakers & Perfume) -->
+            <div class="new-arrival__row-split">
+              <!-- Speakers -->
+              <div class="new-arrival__item new-arrival__item--speaker">
+                <img src="../assets/images/product_speaker.svg" alt="Speakers">
+                <div class="new-arrival__content">
+                  <h3 class="new-arrival__title">Speakers</h3>
+                  <p class="new-arrival__desc font_poppins">Amazon wireless speakers</p>
+                  <a href="#" class="new-arrival__link font_poppins">Shop Now</a>
+                </div>
+              </div>
+
+              <!-- Perfume -->
+              <div class="new-arrival__item new-arrival__item--perfume">
+                <img src="../assets/images/product_perfume.svg" alt="Perfume">
+                <div class="new-arrival__content">
+                  <h3 class="new-arrival__title">Perfume</h3>
+                  <p class="new-arrival__desc font_poppins">GUCCI INTENSE OUD EDP</p>
+                  <a href="#" class="new-arrival__link font_poppins">Shop Now</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" aria-label="Our services">
+      <div class="grid wide">
+        <div class="services-wrapper">
+
+          <!-- Service 1 -->
+          <div class="service-item">
+            <div class="service-item__icon-wrapper">
+              <div class="service-item__icon-inner">
+                <img src="../assets/images/delivery_icon.svg" alt="Delivery">
+              </div>
+            </div>
+            <div class="service-item__content">
+              <h3 class="font_poppins">FREE AND FAST DELIVERY</h3>
+              <p class="font_poppins">Free delivery for all orders over $140</p>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-item">
+            <div class="service-item__icon-wrapper">
+              <div class="service-item__icon-inner">
+                <img src="../assets/images/customer_service_icon.svg" alt="Customer Service">
+              </div>
+            </div>
+            <div class="service-item__content">
+              <h3 class="font_poppins">24/7 CUSTOMER SERVICE</h3>
+              <p class="font_poppins">Friendly 24/7 customer support</p>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-item">
+            <div class="service-item__icon-wrapper">
+              <div class="service-item__icon-inner">
+                <img src="../assets/images/shield_tick_icon.svg" alt="Guarantee">
+              </div>
+            </div>
+            <div class="service-item__content">
+              <h3 class="font_poppins">MONEY BACK GUARANTEE</h3>
+              <p class="font_poppins">We return money within 30 days</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="grid wide">
+      <div class="footer__container">
+
+        <!-- Column 1: Subscribe -->
+        <div class="footer__col">
+          <a href="#" class="footer__logo font_poppins">Exclusive</a>
+          <h3 class="footer__title font_poppins">Subscribe</h3>
+          <p class="footer__text font_poppins">Get 10% off your first order</p>
+          <div class="footer__subscribe">
+            <input type="email" placeholder="Enter your email" class="footer__input font_poppins">
+            <button class="footer__send" aria-label="Subscribe">
+              <img src="../assets/images/send_icon.svg" alt="Send">
+            </button>
+          </div>
+        </div>
+
+        <!-- Column 2: Support -->
+        <div class="footer__col">
+          <h3 class="footer__title font_poppins">Support</h3>
+          <ul class="footer__list">
+            <li>
+              <p class="footer__text font_poppins">111 Bijoy sarani, Dhaka,<br>DH 1515, Bangladesh.</p>
+            </li>
+            <li><a href="mailto:exclusive@gmail.com" class="footer__link font_poppins">exclusive@gmail.com</a></li>
+            <li><a href="tel:+88015888889999" class="footer__link font_poppins">+88015-88888-9999</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Account -->
+        <div class="footer__col">
+          <h3 class="footer__title font_poppins">Account</h3>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link font_poppins">My Account</a></li>
+            <li><a href="#" class="footer__link font_poppins">Login / Register</a></li>
+            <li><a href="#" class="footer__link font_poppins">Cart</a></li>
+            <li><a href="#" class="footer__link font_poppins">Wishlist</a></li>
+            <li><a href="#" class="footer__link font_poppins">Shop</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Quick Link -->
+        <div class="footer__col">
+          <h3 class="footer__title font_poppins">Quick Link</h3>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link font_poppins">Privacy Policy</a></li>
+            <li><a href="#" class="footer__link font_poppins">Terms Of Use</a></li>
+            <li><a href="#" class="footer__link font_poppins">FAQ</a></li>
+            <li><a href="#" class="footer__link font_poppins">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 5: Download App -->
+        <div class="footer__col">
+          <h3 class="footer__title font_poppins">Download App</h3>
+          <p class="footer__text font_poppins"
+            style="font-size: 1.2rem; color: rgba(250,250,250,0.7); margin-bottom: 0.8rem;">Save $3 with App New User
+            Only</p>
+
+          <div class="footer__app-wrapper">
+            <div class="footer__qr">
+              <img src="../assets/images/qr_code.svg" alt="QR Code">
+            </div>
+            <div class="footer__app-stores">
+              <a href="#"><img src="../assets/images/google_play_store_logo.svg" alt="Google Play"></a>
+              <a href="#"><img src="../assets/images/app_store_logo.svg" alt="App Store"></a>
+            </div>
+          </div>
+
+          <div class="footer__socials">
+            <a href="#" class="footer__social-link" aria-label="Facebook"><img src="../assets/images/facebook_icon.svg"
+                alt="Facebook"></a>
+            <a href="#" class="footer__social-link" aria-label="Twitter"><img src="../assets/images/twitter_icon.svg"
+                alt="Twitter"></a>
+            <a href="#" class="footer__social-link" aria-label="Instagram"><img src="../assets/images/instagram_icon.svg"
+                alt="Instagram"></a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn"><img src="../assets/images/linkedin_icon.svg"
+                alt="LinkedIn"></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <img src="../assets/images/copyright_icon.svg" alt="Copyright" class="footer__copyright-icon">
+      <p class="footer__copyright font_poppins">Copyright Rimel 2022. All right reserved</p>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" aria-label="Back to top">
+    <img src="../assets/images/arrow_up.svg" alt="Arrow Up">
+  </button>
+
+  <script src="../js/home.js"></script>
+</body>
+
+</html>

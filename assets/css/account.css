@@ -1,0 +1,220 @@
+.header__account-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    transition: background 0.15s ease;
+}
+
+.header__account-link img {
+    width: 18px;
+    height: 18px;
+    filter: brightness(1) invert(1);
+    flex-shrink: 0;
+}
+
+/* Breadcrumb */
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10rem 0;
+}
+
+
+.breadcrumb {
+    font-size: 1.4rem;
+    color: var(--text-color-grey);
+}
+
+.account__welcome {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 1.4rem;
+}
+
+.account__welcome-name {
+    color: var(--primary-color);
+}
+
+.breadcrumb a {
+    color: var(--text-color-grey);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    color: var(--text-color);
+}
+
+.breadcrumb__separator {
+    margin: 0 12px;
+}
+
+.breadcrumb .breadcrumb__current {
+    color: var(--text-color);
+}
+
+/* Account Container */
+.account__container {
+    margin-bottom: 140px;
+}
+
+/* Sidebar */
+.account__sidebar {
+    padding-right: 24px;
+}
+
+.account__sidebar-section {
+    margin-bottom: 24px;
+}
+
+.account__sidebar-title {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.account__sidebar-list {
+    list-style: none;
+    padding-left: 36px;
+}
+
+.account__sidebar-link {
+    display: block;
+    font-size: 1.6rem;
+    color: var(--text-color-grey);
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: color 0.2s ease;
+    line-height: 1.5;
+}
+
+.account__sidebar-link:hover {
+    color: var(--text-color);
+}
+
+.account__sidebar-link--active {
+    color: var(--primary-color);
+}
+
+.account__sidebar-link--active:hover {
+    color: var(--primary-color);
+}
+
+/* Main Content */
+.account__content {
+    background-color: #fff;
+    padding: 40px 80px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.05);
+}
+
+.account__content-title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 24px;
+}
+
+/* Form Styles */
+.account__form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.account__label {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.account__input {
+    height: 50px;
+    background-color: var(--secondary-color);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 0 16px;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.account__input:focus {
+    border-color: var(--text-color-grey);
+}
+
+.account__input::placeholder {
+    color: var(--text-color-grey);
+}
+
+.account__form-group--password {
+    margin-bottom: 16px;
+}
+
+.account__form-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 32px;
+    margin-top: 24px;
+}
+
+.account__btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.account__btn--cancel {
+    color: var(--text-color);
+}
+
+.account__btn--cancel:hover {
+    color: var(--primary-color);
+}
+
+.account__btn--save {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 16px 48px;
+    border-radius: 4px;
+}
+
+.account__btn--save:hover {
+    background-color: #e03131;
+}
+
+/* Responsive */
+@media (max-width: 1023px) {
+    .account__content {
+        padding: 32px 40px;
+        margin-top: 32px;
+    }
+}
+
+@media (max-width: 767px) {
+    .account__content {
+        padding: 24px 20px;
+    }
+    .account__form-actions {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .account__btn--save {
+        width: 100%;
+    }
+}
