@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="../assets/css/header.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/flash_sales.css">
-    <link rel="stylesheet" href="../assets/css/cart.css">
+    <link rel="stylesheet" href="../assets/css/checkout.css">
 
 
     <title>E-Commerce</title>
@@ -85,114 +85,136 @@
                 </div>
             </div>
         </div>
-    </header>                                                                                               
-
-    <!-- Main Content -->
+    </header>
     <main class="main">
         <div class="grid wide">
             <!-- Breadcrumb -->
             <div class="breadcrumb font_poppins">
-                <a href="../index.html">Home</a>
+                <a href="../index.html">Account</a>
                 <span class="breadcrumb__separator">/</span>
-                <a href="#" class="breadcrumb__current">Cart</a>
+                <a href="../index.html">My Account</a>
+                <span class="breadcrumb__separator">/</span>
+                <a href="../index.html">Product</a>
+                <span class="breadcrumb__separator">/</span>
+                <a href="../index.html">View Cart</a>
+                <span class="breadcrumb__separator">/</span>
+                <a href="#" class="breadcrumb__current">CheckOut</a>
             </div>
 
-            <!-- Cart Section -->
-            <div class="cart">
-                <!-- Cart Header -->
-                <div class="cart__header font_poppins">
-                    <div class="cart__header-item">Product</div>
-                    <div class="cart__header-item">Price</div>
-                    <div class="cart__header-item">Quantity</div>
-                    <div class="cart__header-item">Subtotal</div>
-                </div>
-
-                <!-- Cart Items -->
-                <div class="cart__list">
-                    <!-- Item 1 -->
-                    <div class="cart__item font_poppins">
-                        <div class="cart__item-product">
-                            <div class="cart__item-img-wrapper">
-                                <img src="../assets/images/product_3.svg" alt="LCD Monitor" class="cart__item-img" onerror="this.src='https://placehold.co/54x54?text=Monitor'">
-                                <button class="cart__item-remove" aria-label="Remove item">
-                                    <i class="fa-solid fa-xmark"></i>
-                                </button>
+            <!-- Checkout Section -->
+            <div class="checkout">
+                <h2 class="checkout__title font_inter">Billing Details</h2>
+                
+                <div class="checkout__container row">
+                    <!-- Billing Form -->
+                    <div class="col l-6 m-12 c-12">
+                        <form class="checkout__form">
+                            <div class="checkout__form-group">
+                                <label for="firstName" class="checkout__label font_poppins">First Name<span class="required">*</span></label>
+                                <input type="text" id="firstName" class="checkout__input" required>
                             </div>
-                            <span class="cart__item-name">LCD Monitor</span>
-                        </div>
-                        <div class="cart__item-price">$650</div>
-                        <div class="cart__item-quantity">
-                            <div class="cart__quantity-wrapper">
-                                <input type="text" value="01" min="1" class="cart__quantity-input">
-                                <div class="cart__quantity-actions">
-                                    <i class="fa-solid fa-angle-up"></i>
-                                    <i class="fa-solid fa-angle-down"></i>
+                            
+                            <div class="checkout__form-group">
+                                <label for="companyName" class="checkout__label font_poppins">Company Name</label>
+                                <input type="text" id="companyName" class="checkout__input">
+                            </div>
+                            
+                            <div class="checkout__form-group">
+                                <label for="streetAddress" class="checkout__label font_poppins">Street Address<span class="required">*</span></label>
+                                <input type="text" id="streetAddress" class="checkout__input" required>
+                            </div>
+                            
+                            <div class="checkout__form-group">
+                                <label for="apartment" class="checkout__label font_poppins">Apartment, floor, etc. (optional)</label>
+                                <input type="text" id="apartment" class="checkout__input">
+                            </div>
+                            
+                            <div class="checkout__form-group">
+                                <label for="city" class="checkout__label font_poppins">Town/City<span class="required">*</span></label>
+                                <input type="text" id="city" class="checkout__input" required>
+                            </div>
+                            
+                            <div class="checkout__form-group">
+                                <label for="phoneNumber" class="checkout__label font_poppins">Phone Number<span class="required">*</span></label>
+                                <input type="tel" id="phoneNumber" class="checkout__input" required>
+                            </div>
+                            
+                            <div class="checkout__form-group">
+                                <label for="email" class="checkout__label font_poppins">Email Address<span class="required">*</span></label>
+                                <input type="email" id="email" class="checkout__input" required>
+                            </div>
+                            
+                            <div class="checkout__form-checkbox">
+                                <input type="checkbox" id="saveInfo" class="checkout__checkbox">
+                                <label for="saveInfo" class="checkout__checkbox-label font_poppins">Save this information for faster check-out next time</label>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Order Summary -->
+                    <div class="col l-5 m-12 c-12 l-o-1">
+                        <div class="checkout__summary">
+                            <div class="checkout__summary-items">
+                                <!-- Item 1 -->
+                                <div class="checkout__item">
+                                    <div class="checkout__item-info">
+                                        <img src="../assets/images/product_1.svg" alt="LCD Monitor" class="checkout__item-img">
+                                        <span class="checkout__item-name font_poppins">LCD Monitor</span>
+                                    </div>
+                                    <span class="checkout__item-price font_poppins">$650</span>
+                                </div>
+                                <!-- Item 2 -->
+                                <div class="checkout__item">
+                                    <div class="checkout__item-info">
+                                        <img src="../assets/images/product_3.svg" alt="H1 Gamepad" class="checkout__item-img">
+                                        <span class="checkout__item-name font_poppins">H1 Gamepad</span>
+                                    </div>
+                                    <span class="checkout__item-price font_poppins">$1100</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="cart__item-subtotal">$650</div>
-                    </div>
 
-                    <!-- Item 2 -->
-                    <div class="cart__item font_poppins">
-                        <div class="cart__item-product">
-                            <div class="cart__item-img-wrapper">
-                                <img src="../assets/images/product_1.svg" alt="H1 Gamepad" class="cart__item-img" onerror="this.src='https://placehold.co/54x54?text=Gamepad'">
-                                <button class="cart__item-remove" aria-label="Remove item">
-                                    <i class="fa-solid fa-xmark"></i>
-                                </button>
-                            </div>
-                            <span class="cart__item-name">H1 Gamepad</span>
-                        </div>
-                        <div class="cart__item-price">$550</div>
-                        <div class="cart__item-quantity">
-                            <div class="cart__quantity-wrapper">
-                                <input type="text" value="02" min="1" class="cart__quantity-input">
-                                <div class="cart__quantity-actions">
-                                    <i class="fa-solid fa-angle-up"></i>
-                                    <i class="fa-solid fa-angle-down"></i>
+                            <div class="checkout__summary-totals">
+                                <div class="checkout__total-row font_poppins">
+                                    <span>Subtotal:</span>
+                                    <span>$1750</span>
+                                </div>
+                                <div class="checkout__total-row checkout__total-separator font_poppins">
+                                    <span>Shipping:</span>
+                                    <span>Free</span>
+                                </div>
+                                <div class="checkout__total-row checkout__total-final font_poppins">
+                                    <span>Total:</span>
+                                    <span>$1750</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="cart__item-subtotal">$1100</div>
-                    </div>
-                </div>
 
-                <!-- Cart Actions -->
-                <div class="cart__actions font_poppins">
-                    <a href="../index.html" class="btn btn--normal cart__action-btn">Return To Shop</a>
-                    <button class="btn btn--normal cart__action-btn">Update Cart</button>
-                </div>
+                            <div class="checkout__payment-methods">
+                                <div class="checkout__payment-option">
+                                    <div class="checkout__payment-radio-group">
+                                        <input type="radio" id="bank" name="paymentMethod" class="checkout__payment-radio">
+                                        <label for="bank" class="checkout__payment-label font_poppins">Bank</label>
+                                    </div>
+                                    <div class="checkout__payment-icons">
+                                        <img src="../assets/images/bkash_icon.svg" alt="BKash">
+                                        <img src="../assets/images/visa_icon.svg" alt="Visa">
+                                        <img src="../assets/images/mastercard_icon.svg" alt="Mastercard">
+                                        <img src="../assets/images/nagad_icon.svg" alt="Nagad">
+                                    </div>
+                                </div>
+                                <div class="checkout__payment-option">
+                                    <div class="checkout__payment-radio-group">
+                                        <input type="radio" id="cod" name="paymentMethod" class="checkout__payment-radio" checked>
+                                        <label for="cod" class="checkout__payment-label font_poppins">Cash on delivery</label>
+                                    </div>
+                                </div>
+                            </div>
 
-                <!-- Cart Bottom -->
-                <div class="row cart__bottom">
-                    <!-- Coupon -->
-                    <div class="col l-6 m-12 c-12">
-                        <div class="cart__coupon">
-                            <input type="text" class="cart__coupon-input font_poppins" placeholder="Coupon Code">
-                            <button class="btn btn--primary cart__coupon-btn font_poppins">Apply Coupon</button>
-                        </div>
-                    </div>
-                    
-                    <!-- Cart Total -->
-                    <div class="col l-6 m-12 c-12">
-                        <div class="cart__total font_poppins">
-                            <h3 class="cart__total-title">Cart Total</h3>
-                            <div class="cart__total-row">
-                                <span>Subtotal:</span>
-                                <span>$1750</span>
+                            <div class="checkout__coupon">
+                                <input type="text" placeholder="Coupon Code" class="checkout__coupon-input font_poppins">
+                                <button class="checkout__coupon-btn font_poppins button-primary">Apply Coupon</button>
                             </div>
-                            <div class="cart__total-row">
-                                <span>Shipping:</span>
-                                <span>Free</span>
-                            </div>
-                            <div class="cart__total-row cart__total-row--final">
-                                <span>Total:</span>
-                                <span>$1750</span>
-                            </div>
-                            <a href="../pages/checkout.html" class="cart__total-checkout">
-                                <button class="btn btn--primary cart__checkout-btn">Proceed to checkout</button>
-                            </a>
+
+                            <button class="checkout__place-order font_poppins button-primary">Place Order</button>
                         </div>
                     </div>
                 </div>
@@ -293,8 +315,5 @@
         </div>
     </footer>
 
-    <script src="../js/home.js"></script>
-    <script src="../js/cart.js"></script>
 </body>
-
 </html>

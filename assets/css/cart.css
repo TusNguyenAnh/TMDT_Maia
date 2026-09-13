@@ -57,7 +57,7 @@
     margin: 0 12px;
 }
 
-.breadcrumb__current {
+.breadcrumb .breadcrumb__current {
     color: var(--text-color);
 }
 
