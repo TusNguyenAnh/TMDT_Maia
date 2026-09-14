@@ -15,7 +15,7 @@
 }
 
 .breadcrumbs__item:hover {
-    color: var(--color-brand-red-primary);
+    color: var(--text-color);
 }
 
 .breadcrumbs__item-active {
@@ -43,7 +43,7 @@
 .notfound__number {
     font-size: 11rem;
     font-weight: 500;
-    color: var(--color-brand-red-primary);
+    color: var(--text-color);
     margin: 0;
 }
 
