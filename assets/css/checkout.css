@@ -39,7 +39,7 @@
 
 /* Breadcrumb */
 .breadcrumb {
-    margin: 40px 0 60px 0;
+    margin: 10rem 0;
     font-size: 1.4rem;
     color: var(--text-color-grey);
 }

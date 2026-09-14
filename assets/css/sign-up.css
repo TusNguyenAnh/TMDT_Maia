@@ -20,7 +20,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: 78rem;
-  margin: 6rem 0;
+  margin: 6rem max(0px, calc((100vw - 1200px) / 2)) 6rem 0;
 }
 
 /* ── Left: Image Panel ── */
@@ -62,13 +62,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 6rem 4rem;
+  margin-left: 16rem;
   background-color: #ffffff;
 }
 
 .signup__form-wrap {
   width: 100%;
-  max-width: 50rem;
 }
 
 /* ── Typography ── */

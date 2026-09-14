@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/grid.css">
+    <link rel="stylesheet" href="../assets/css/top-bar.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/services.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/about.css">
+
+
+
+    <title>E-Commerce</title>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="grid wide top-bar__container">
+            <div class="top-bar__text font_poppins">
+                Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+                <a href="#" class="top-bar__link">ShopNow</a>
+            </div>
+            <div class="top-bar__lang font_poppins">
+                English
+                <img src="../assets/images/arrow_down.svg" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="grid wide header__container">
+            <!-- Logo -->
+            <div class="header__logo">
+                <a href="../index.html">Exclusive</a>
+            </div>
+
+            <!-- Navbar -->
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="../index.html">Home</a></li>
+                    <li class="header__nav-item"><a href="#">Contact</a></li>
+                    <li class="header__nav-item header__nav-item-active"><a href="#">About</a></li>
+                    <li class="header__nav-item"><a href="../pages/sign-up.html">Sign Up</a></li>
+                </ul>
+            </nav>
+
+            <!-- Actions -->
+            <div class="header__actions">
+                <div class="header__search">
+                    <input type="text" class="header__search-input font_poppins"
+                        placeholder="What are you looking for?">
+                    <button class="header__search-btn">
+                        <img src="../assets/images/search.svg" />
+                    </button>
+                </div>
+
+                <div class="header__icons">
+                    <a href="./wishlist.html" aria-label="Wishlist" id="header__icons-wishlist">
+                        <img src="../assets/images/heart.svg" />
+                    </a>
+                    <a href="./cart.html" aria-label="Cart" id="header__icons-cart">
+                        <img src="../assets/images/cart.svg" />
+                    </a>
+
+                    <a href="./account.html" aria-label="Account">
+                        <img src="../assets/images/user_icon_2.svg" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="grid wide">
+            <!-- Breadcrumb -->
+            <div class="breadcrumb font_poppins">
+                <a href="../index.html">Home</a>
+                <span class="breadcrumb__separator">/</span>
+                <a href="#" class="breadcrumb__current">About</a>
+            </div>
+        </div>
+
+        <!-- Our Story Section -->
+        <section class="our-story" aria-labelledby="our-story-title">
+            <div class="our-story__container">
+                <div class="our-story__content">
+                    <h1 id="our-story-title" class="our-story__title font_poppins">Our Story</h1>
+                    <p class="our-story__desc font_poppins">
+                        Launced in 2015, Exclusive is South Asia's premier online shopping makterplace with an active
+                        presense in Bangladesh. Supported by wide range of tailored marketing, data and service
+                        solutions, Exclusive has 10,500 sallers and 300 brands and serves 3 millioons customers across
+                        the region.
+                    </p>
+                    <p class="our-story__desc font_poppins">
+                        Exclusive has more than 1 Million products to offer, growing at a very fast. Exclusive offers a
+                        diverse assotment in categories ranging from consumer.
+                    </p>
+                </div>
+                <div class="our-story__image">
+                    <img src="../assets/images/two_womans.svg" alt="Two women shopping with shopping bags">
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats" aria-label="Company Statistics">
+            <div class="grid wide">
+                <div class="stats__grid">
+                    <!-- Stat 1 -->
+                    <div class="stats__item">
+                        <div class="stats__icon-wrapper">
+                            <div class="stats__icon-inner">
+                                <img src="../assets/images/shop_icon.svg" alt="Shop">
+                            </div>
+                        </div>
+                        <h3 class="stats__number font_poppins">10.5k</h3>
+                        <p class="stats__text font_poppins">Sallers active our site</p>
+                    </div>
+                    <!-- Stat 2 -->
+                    <div class="stats__item stats__item--active">
+                        <div class="stats__icon-wrapper">
+                            <div class="stats__icon-inner">
+                                <img src="../assets/images/dollar_icon.svg" alt="Dollar">
+                            </div>
+                        </div>
+                        <h3 class="stats__number font_poppins">33k</h3>
+                        <p class="stats__text font_poppins">Mopnthly Produduct Sale</p>
+                    </div>
+                    <!-- Stat 3 -->
+                    <div class="stats__item">
+                        <div class="stats__icon-wrapper">
+                            <div class="stats__icon-inner">
+                                <img src="../assets/images/shopping_bag_icon.svg" alt="Shopping bag">
+                            </div>
+                        </div>
+                        <h3 class="stats__number font_poppins">45.5k</h3>
+                        <p class="stats__text font_poppins">Customer active in our site</p>
+                    </div>
+                    <!-- Stat 4 -->
+                    <div class="stats__item">
+                        <div class="stats__icon-wrapper">
+                            <div class="stats__icon-inner">
+                                <img src="../assets/images/money_bag_icon.svg" alt="Money bag">
+                            </div>
+                        </div>
+                        <h3 class="stats__number font_poppins">25k</h3>
+                        <p class="stats__text font_poppins">Anual gross sale in our site</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team" aria-label="Our Team">
+            <div class="grid wide">
+                <div class="team__grid">
+                    <!-- Team Member 1 -->
+                    <div class="team__member">
+                        <div class="team__member-image">
+                            <img src="../assets/images/tom_cruise.svg" alt="Tom Cruise">
+                        </div>
+                        <h3 class="team__member-name font_poppins">Tom Cruise</h3>
+                        <p class="team__member-role font_poppins">Founder & Chairman</p>
+                        <div class="team__member-socials">
+                            <a href="#" aria-label="Twitter"><img src="../assets/images/twitter_black_icon.svg" alt="Twitter"></a>
+                            <a href="#" aria-label="Instagram"><img src="../assets/images/instagram_black_icon.svg" alt="Instagram"></a>
+                            <a href="#" aria-label="LinkedIn"><img src="../assets/images/linkedin_black_icon.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                    <!-- Team Member 2 -->
+                    <div class="team__member">
+                        <div class="team__member-image">
+                            <img src="../assets/images/emma_watson.svg" alt="Emma Watson">
+                        </div>
+                        <h3 class="team__member-name font_poppins">Emma Watson</h3>
+                        <p class="team__member-role font_poppins">Managing Director</p>
+                        <div class="team__member-socials">
+                            <a href="#" aria-label="Twitter"><img src="../assets/images/twitter_black_icon.svg" alt="Twitter"></a>
+                            <a href="#" aria-label="Instagram"><img src="../assets/images/instagram_black_icon.svg" alt="Instagram"></a>
+                            <a href="#" aria-label="LinkedIn"><img src="../assets/images/linkedin_black_icon.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                    <!-- Team Member 3 -->
+                    <div class="team__member">
+                        <div class="team__member-image">
+                            <img src="../assets/images/will_smith.svg" alt="Will Smith">
+                        </div>
+                        <h3 class="team__member-name font_poppins">Will Smith</h3>
+                        <p class="team__member-role font_poppins">Product Designer</p>
+                        <div class="team__member-socials">
+                            <a href="#" aria-label="Twitter"><img src="../assets/images/twitter_black_icon.svg" alt="Twitter"></a>
+                            <a href="#" aria-label="Instagram"><img src="../assets/images/instagram_black_icon.svg" alt="Instagram"></a>
+                            <a href="#" aria-label="LinkedIn"><img src="../assets/images/linkedin_black_icon.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pagination Dots -->
+                <div class="team__pagination">
+                    <span class="team__pagination-dot" aria-label="Page 1"></span>
+                    <span class="team__pagination-dot" aria-label="Page 2"></span>
+                    <span class="team__pagination-dot team__pagination-dot--active" aria-label="Page 3"></span>
+                    <span class="team__pagination-dot" aria-label="Page 4"></span>
+                    <span class="team__pagination-dot" aria-label="Page 5"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" aria-label="Our services">
+            <div class="grid wide">
+                <div class="services-wrapper">
+
+                    <!-- Service 1 -->
+                    <div class="service-item">
+                        <div class="service-item__icon-wrapper">
+                            <div class="service-item__icon-inner">
+                                <img src="../assets/images/delivery_icon.svg" alt="Delivery">
+                            </div>
+                        </div>
+                        <div class="service-item__content">
+                            <h3 class="font_poppins">FREE AND FAST DELIVERY</h3>
+                            <p class="font_poppins">Free delivery for all orders over $140</p>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-item">
+                        <div class="service-item__icon-wrapper">
+                            <div class="service-item__icon-inner">
+                                <img src="../assets/images/customer_service_icon.svg" alt="Customer Service">
+                            </div>
+                        </div>
+                        <div class="service-item__content">
+                            <h3 class="font_poppins">24/7 CUSTOMER SERVICE</h3>
+                            <p class="font_poppins">Friendly 24/7 customer support</p>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-item">
+                        <div class="service-item__icon-wrapper">
+                            <div class="service-item__icon-inner">
+                                <img src="../assets/images/shield_tick_icon.svg" alt="Guarantee">
+                            </div>
+                        </div>
+                        <div class="service-item__content">
+                            <h3 class="font_poppins">MONEY BACK GUARANTEE</h3>
+                            <p class="font_poppins">We return money within 30 days</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="footer__container">
+
+                    <!-- Column 1: Subscribe -->
+                    <div class="footer__col">
+                        <a href="#" class="footer__logo font_poppins">Exclusive</a>
+                        <h3 class="footer__title font_poppins">Subscribe</h3>
+                        <p class="footer__text font_poppins">Get 10% off your first order</p>
+                        <div class="footer__subscribe">
+                            <input type="email" placeholder="Enter your email" class="footer__input font_poppins">
+                            <button class="footer__send" aria-label="Subscribe">
+                                <img src="../assets/images/send_icon.svg" alt="Send">
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Support -->
+                    <div class="footer__col">
+                        <h3 class="footer__title font_poppins">Support</h3>
+                        <ul class="footer__list">
+                            <li>
+                                <p class="footer__text font_poppins">111 Bijoy sarani, Dhaka,<br>DH 1515, Bangladesh.
+                                </p>
+                            </li>
+                            <li><a href="mailto:exclusive@gmail.com"
+                                    class="footer__link font_poppins">exclusive@gmail.com</a></li>
+                            <li><a href="tel:+88015888889999" class="footer__link font_poppins">+88015-88888-9999</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3: Account -->
+                    <div class="footer__col">
+                        <h3 class="footer__title font_poppins">Account</h3>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link font_poppins">My Account</a></li>
+                            <li><a href="#" class="footer__link font_poppins">Login / Register</a></li>
+                            <li><a href="#" class="footer__link font_poppins">Cart</a></li>
+                            <li><a href="#" class="footer__link font_poppins">Wishlist</a></li>
+                            <li><a href="#" class="footer__link font_poppins">Shop</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4: Quick Link -->
+                    <div class="footer__col">
+                        <h3 class="footer__title font_poppins">Quick Link</h3>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link font_poppins">Privacy Policy</a></li>
+                            <li><a href="#" class="footer__link font_poppins">Terms Of Use</a></li>
+                            <li><a href="#" class="footer__link font_poppins">FAQ</a></li>
+                            <li><a href="#" class="footer__link font_poppins">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 5: Download App -->
+                    <div class="footer__col">
+                        <h3 class="footer__title font_poppins">Download App</h3>
+                        <p class="footer__text font_poppins"
+                            style="font-size: 1.2rem; color: rgba(250,250,250,0.7); margin-bottom: 0.8rem;">Save $3 with
+                            App
+                            New User
+                            Only</p>
+
+                        <div class="footer__app-wrapper">
+                            <div class="footer__qr">
+                                <img src="../assets/images/qr_code.svg" alt="QR Code">
+                            </div>
+                            <div class="footer__app-stores">
+                                <a href="#"><img src="../assets/images/google_play_store_logo.svg"
+                                        alt="Google Play"></a>
+                                <a href="#"><img src="../assets/images/app_store_logo.svg" alt="App Store"></a>
+                            </div>
+                        </div>
+
+                        <div class="footer__socials">
+                            <a href="#" class="footer__social-link" aria-label="Facebook"><img
+                                    src="../assets/images/facebook_icon.svg" alt="Facebook"></a>
+                            <a href="#" class="footer__social-link" aria-label="Twitter"><img
+                                    src="../assets/images/twitter_icon.svg" alt="Twitter"></a>
+                            <a href="#" class="footer__social-link" aria-label="Instagram"><img
+                                    src="../assets/images/instagram_icon.svg" alt="Instagram"></a>
+                            <a href="#" class="footer__social-link" aria-label="LinkedIn"><img
+                                    src="../assets/images/linkedin_icon.svg" alt="LinkedIn"></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <img src="../assets/images/copyright_icon.svg" alt="Copyright" class="footer__copyright-icon">
+                <p class="footer__copyright font_poppins">Copyright Rimel 2022. All right reserved</p>
+            </div>
+        </footer>
+
+    </main>
+</body>
